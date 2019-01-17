@@ -52,10 +52,16 @@
 
 	/* Footer and menubar font bigger */
 	.nav {
-	    font-size: 1.4rem;
+	    font-size: 1.2rem;
 	    font-weight: bold;
 	}
 	
 	.site-footer-content {
 	    font-size: 1.6rem;
 	}
+
+	/* Google Search */
+	input[type=search] {
+	    box-sizing: content-box;
+	    -webkit-appearance: searchfield;
+	} 

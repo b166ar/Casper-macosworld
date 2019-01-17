@@ -37,7 +37,7 @@
 
 /* Reduce padding-bottom of the footer by 20px */
 	.site-footer {
-	    padding-bottom: 20px;
+	    padding-bottom: 25px;
 	}
 
 	/* Use GitLab-like font for code blocks instead of ugly monospace */
@@ -48,4 +48,14 @@
 	/* Make the post content font size 0.3rem tinier */
 	.post-full-content {
 	    font-size: 1.9rem;
+	}
+
+	/* Footer and menubar font bigger */
+	.nav {
+	    font-size: 1.4rem;
+	    font-weight: bold;
+	}
+	
+	.site-footer-content {
+	    font-size: 1.6rem;
 	}

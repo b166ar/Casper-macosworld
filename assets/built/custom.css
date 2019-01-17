@@ -39,3 +39,13 @@
 	.site-footer {
 	    padding-bottom: 20px;
 	}
+
+	/* Use GitLab-like font for code blocks instead of ugly monospace */
+	code, kbd, pre, samp {
+	    font-family: "Menlo", "DejaVu Sans Mono", "Liberation Mono", "Consolas", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
+	}
+	
+	/* Make the post content font size 0.3rem tinier */
+	.post-full-content {
+	    font-size: 1.9rem;
+	}

@@ -1,5 +1,5 @@
 
-{{!-- Telegram icon in topbar --}}
+/* Telegram icon in topbar */
 
 .floating-header-share-tg {
 	    display: block;
@@ -31,4 +31,11 @@
 	    }
 	} 
 	
-{{!-- END of Telegram icon in topbar --}}
+/*  END of Telegram icon in topbar */
+
+
+
+/* Reduce padding-bottom of the footer by 20px */
+	.site-footer {
+	    padding-bottom: 20px;
+	}

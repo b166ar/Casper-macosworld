@@ -13,13 +13,13 @@
     "Read More": "Все статьи автора",
     "👉 Read More": "👉 Все статьи автора",
     "This post was a collaboration between": "Над этой статьей работали",
-
+    "with the email address": "Письма будуд приходить на адресс",
 
     "Back": "Назад",
     "Newer Posts": "Назад",
     "Older Posts": "Ещё",
     "Page {page} of {pages}": "Страница {page} из {pages}",
-    "Subscribed!": "Вы подписаны!", 
+    "Subscribed!": "Спасибо за подписку! 🥳", 
     "You’ve successfully subscribed to": "Вы успешно подписались на",
     "A collection of posts": "Коллекция статей",
     "A collection of 1 post": "Коллекция из 1 статьи",
@@ -32,5 +32,8 @@
     "Ref:": "Ref:",
     "youremail@example.com": "youremail@example.com",
     "% posts": "% статьи(-ей)"
+
+
+
 }
 

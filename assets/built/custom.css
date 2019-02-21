@@ -88,3 +88,23 @@
 	 .menu{
 	    background-color: #E5EFF5;
 	}
+
+.bn_center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.post-full-content figure {
+	margin: 0.6em 0 4em;
+}
+
+.post-full-content video {
+	margin: 0em auto;
+}
+
+.subscribe-form {
+	padding: 4vw 7vw 5vw;
+}

@@ -50,6 +50,16 @@
 	    font-size: 1.9rem;
 	}
 
+	/* Правильные отступы для YouTube-видео и анимированных картинок */
+	.post-full-content video {
+	    margin: -1em 0em 0em 0em;
+	}
+
+	/* Правильные отступы для картинок */
+	.post-full-content figure img {
+	    margin: -1em 0em 0em 0em;
+	}
+
 	/* Footer and menubar font bigger */
 	.nav {
 	    font-size: 1.2rem;

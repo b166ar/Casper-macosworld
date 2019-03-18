@@ -35,6 +35,23 @@
 
 
 
+/* Подсвечивание ссылок в статьях */
+
+.post-full-content a {
+
+	color: #0070C9;
+ -webkit-box-shadow: #c9e5f5 0 -1px 0 inset;
+	padding: 0 0 0px;
+	box-shadow: inset 0 -1px 0 #c9e5f5;
+}
+
+.post-full-content a:hover {
+
+color: #e20016;
+ -webkit-box-shadow: #e20016 0 -1px 0 inset;
+box-shadow: inset 0 -1px 0 #e20016;
+}
+
 /* Reduce padding-bottom of the footer by 20px */
 	.site-footer {
 	    padding-bottom: 25px;
@@ -50,16 +67,28 @@
 	    font-size: 1.9rem;
 	}
 
-	/* Правильные отступы для YouTube-видео и анимированных картинок */
-	.post-full-content video {
-	    margin: -1em 0em 0em 0em;
-	}
-
 	/* Правильные отступы для картинок */
-	.post-full-content figure img {
-	    margin: -1em 0em 0em 0em;
+
+	.post-full-content figure { 
+		margin:0.2em 0 3em;
+
 	}
 
+/* Фикс отступов для видео а-дя гифок*/
+	.post-full-content video { 
+		margin: 0 auto;
+
+	}
+
+
+	/* Фикс комментов для галлереи */
+	.kg-image-card.kg-width-wide+.kg-image-card.kg-width-wide,
+.kg-gallery-card+.kg-image-card.kg-width-wide{ 
+		margin-top: 0;
+
+	}
+
+1
 	/* Footer and menubar font bigger */
 	.nav {
 	    font-size: 1.2rem;
@@ -98,3 +127,7 @@
 	 .menu{
 	    background-color: #E5EFF5;
 	}
+
+
+
+

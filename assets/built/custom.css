@@ -35,7 +35,7 @@
 
 
 
-/* Подсвечивание ссылок в статьях */
+/* Подсвечивание ссылок в статьях
 
 .post-full-content a {
 
@@ -50,7 +50,7 @@
 color: #e20016;
  -webkit-box-shadow: #e20016 0 -1px 0 inset;
 box-shadow: inset 0 -1px 0 #e20016;
-}
+}*/
 
 /* Reduce padding-bottom of the footer by 20px */
 	.site-footer {
@@ -62,10 +62,10 @@ box-shadow: inset 0 -1px 0 #e20016;
 	    font-family: "Menlo", "DejaVu Sans Mono", "Liberation Mono", "Consolas", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
 	}
 	
-	/* Make the post content font size 0.3rem tinier */
+	/* Make the post content font size 0.3rem tinier
 	.post-full-content {
 	    font-size: 1.9rem;
-	}
+	}*/
 
 	/* Правильные отступы для картинок */
 
@@ -89,15 +89,15 @@ box-shadow: inset 0 -1px 0 #e20016;
 	}
 
 1
-	/* Footer and menubar font bigger */
-	.nav {
+	/* Footer and menubar font bigger 
+		.nav {
 	    font-size: 1.2rem;
 	    font-weight: bold;
 	}
 	
 	.site-footer-content {
 	    font-size: 1.6rem;
-	}
+	}*/
 
 	/* Google Search */
 	input[type=search] {

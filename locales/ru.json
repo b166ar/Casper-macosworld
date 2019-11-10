@@ -31,12 +31,12 @@
     "Read <a href='{url}'>more posts</a> by this author": "<a href='{url}'>Другие статьи</a> этого автора",
     "Ref:": "Ref:",
     "youremail@example.com": "введиет вашу почту",
-    "% posts": "% статьи(-ей)"
+    "% posts": "% статьи(-ей)",
 
 
     "Great!": "Спасибо!",
     "Check your inbox and click the link to confirm your subscription.": "Проверте свою почту и подтвердите подписку, чтобы письма точно приходили ;)",
-
+    "Website": "Сайт",
 
 
 }

@@ -15,8 +15,8 @@ into the {body} of the default.hbs template --}}
     <div class="inner">
         <section class="error-message">
             <h1 class="error-code">{{statusCode}}</h1>
-            <p class="error-description">{{message}}</p>
-            <a class="error-link" href="{{@site.url}}">{{t "Go to the front page →"}}</a>
+            <p class="error-description">Страница не найдена</p>
+            <a class="error-link" href="{{@site.url}}">👉 Перейти на главную страницу</a>
         </section>
 
         {{#get "posts" limit="24" include="authors,tags"}}

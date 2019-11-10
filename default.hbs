@@ -45,7 +45,7 @@
     {{#if @labs.members}}
     <div class="subscribe-success-message">
         <a class="subscribe-close" href="javascript:;"></a>
-        You've successfully subscribed to {{@site.title}}!
+        Вы подписались на {{@site.title}}!
     </div>
 
     <div id="subscribe" class="subscribe-overlay">
@@ -55,22 +55,22 @@
                 <img class="subscribe-overlay-logo" src="{{@site.logo}}" alt="{{@site.title}}" />
             {{/if}}
             <div class="subscribe-form">
-                <h1 class="subscribe-overlay-title">{{t "Subscribe to"}} {{@site.title}}</h1>
-                <p class="subscribe-overlay-description">{{t "Stay up to date! Get all the latest greatest posts delivered straight to your inbox"}}</p>
+                <h1 class="subscribe-overlay-title">Подпишитесь на {{@site.title}}</h1>
+                <p class="subscribe-overlay-description">Получайте свежие статьи прямо на почту. Без спама.</p>
                 <form data-members-form="subscribe">
                     <div class="form-group">
-                        <input class="subscribe-email" data-members-email placeholder="youremail@example.com"
+                        <input class="subscribe-email" data-members-email placeholder="введите вашу почту"
                             autocomplete="false" />
                         <button class="button primary" type="submit">
-                            <span class="button-content">{{t "Subscribe"}}</span>
+                            <span class="button-content">Подиписаться</span>
                             <span class="button-loader">{{> "icons/loader"}}</span>
                         </button>
                     </div>
                     <div class="message-success">
-                        <strong>{{t "Great!"}}</strong> {{t "Check your inbox and click the link to confirm your subscription."}}
+                        <strong>Готово!</strong> Проверте свою почту и подтвердите подписку, чтобы письма точно приходили.
                     </div>
                     <div class="message-error">
-                        {{t "Please enter a valid email address!!"}}
+                        В написании адреса какая-то ошибка. Введите правильный адресс. 
                     </div>
                 </form>
             </div>

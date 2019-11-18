@@ -81,12 +81,12 @@ box-shadow: inset 0 -1px 0 #e20016;
 	}
 
 
-	/* Фикс комментов для галлереи */
+	/* Фикс комментов для галлереи
 	.kg-image-card.kg-width-wide+.kg-image-card.kg-width-wide,
 .kg-gallery-card+.kg-image-card.kg-width-wide{ 
 		margin-top: 0;
 
-	}
+	} */
 
 1
 	/* Footer and menubar font bigger 
@@ -99,7 +99,7 @@ box-shadow: inset 0 -1px 0 #e20016;
 	    font-size: 1.6rem;
 	}*/
 
-	/* Google Search */
+	/* Google Search  *
 	input[type=search] {
 	    box-sizing: content-box;
 	    -webkit-appearance: searchfield;

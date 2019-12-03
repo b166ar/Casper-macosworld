@@ -5,14 +5,6 @@ into the {body} of the default.hbs template --}}
 
 <header class="site-header">
     {{> site-header}}
-
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-5277964457206270",
-          enable_page_level_ads: true
-     });
-</script>
 </header>
 
 {{!-- Everything inside the #post tags pulls data from the post --}}
@@ -21,9 +13,23 @@ into the {body} of the default.hbs template --}}
 <main id="site-main" class="site-main outer">
     <div class="inner">
 
-        <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+<br>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Надо заголовком статьи -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5277964457206270"
+     data-ad-slot="2340150704"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
+        <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
             <header class="post-full-header">
+
+
 
                 {{#if primary_tag}}
                 <section class="post-full-tags">

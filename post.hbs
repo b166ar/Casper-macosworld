@@ -28,9 +28,7 @@ into the {body} of the default.hbs template --}}
 
         <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
             <header class="post-full-header">
-
-
-
+            
                 {{#if primary_tag}}
                 <section class="post-full-tags">
                     {{#primary_tag}}
@@ -123,11 +121,22 @@ into the {body} of the default.hbs template --}}
                 </div>
             </section>
 
-            <a href="https://apps.apple.com/ua/app/keykey-typing-practice/id1035137927?mt=12&ct=blogBanner" target="_blank" class="kk-promo"><img src="https://macosworld.ru/content/images/2019/06/kk-promo-blog-1.png" alt="Клавиатурный тренажер KeyKey для Mac"></a>
+         {{!--   <a href="https://apps.apple.com/ua/app/keykey-typing-practice/id1035137927?mt=12&ct=blogBanner" target="_blank" class="kk-promo"><img src="https://macosworld.ru/content/images/size/w1600/2020/07/keykey-no-promo.png" alt="Клавиатурный тренажер KeyKey для Mac"></a>--}}
+                
+        <section class="post-read">
+       <div class="post-read-header">Получайте новые статьи 👇</div>
+        
+       <div class="post-read-items">
+            <a href="http://eepurl.com/g7deMf" class="button" target="_blank">По почте</a>
+            <a href="/rss/" class="button">Через RSS</a>
+            <a href="https://t.me/moswrld" class="button" target="_blank">В Telegram</a>
 
+        </div>
+         </section>
+        
             {{!-- Email subscribe form at the bottom of the page --}}
             {{#if @labs.members}}
-                {{> subscribe-form}}
+             {{!--   {{> subscribe-form}}--}}
             {{/if}}
 
             {{!--

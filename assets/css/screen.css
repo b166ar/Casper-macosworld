@@ -1096,6 +1096,9 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
 }
 
+.post-full-content video {
+  width: unset !important;
+}
 
 /* Full bleed images (#full)
 Super neat trick courtesy of @JoelDrapper

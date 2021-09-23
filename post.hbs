@@ -7,6 +7,7 @@ into the {body} tag of the default.hbs template --}}
 {{#post}}
 {{!-- Everything inside the #post block pulls data from the post --}}
 
+<<<<<<< HEAD
 <main id="site-main" class="site-main">
     <article class="article {{post_class}}">
 
@@ -17,6 +18,34 @@ into the {body} tag of the default.hbs template --}}
                 <a href="{{primary_tag.url}}">{{primary_tag.name}}</a>
             </section>
             {{/if}}
+=======
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+<br>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Надо заголовком статьи -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5277964457206270"
+     data-ad-slot="2340150704"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+            <header class="post-full-header">
+            
+                {{#if primary_tag}}
+                <section class="post-full-tags">
+                    {{#primary_tag}}
+                    <a href="{{url}}">{{name}}</a>
+                    {{/primary_tag}}
+                </section>
+                {{/if}}
+>>>>>>> myRepo/master
 
             <h1 class="article-title">{{title}}</h1>
 
@@ -24,6 +53,7 @@ into the {body} tag of the default.hbs template --}}
             <p class="article-excerpt">{{custom_excerpt}}</p>
             {{/if}}
 
+<<<<<<< HEAD
             <div class="article-byline">
                 <section class="article-byline-content">
                     <ul class="author-list">
@@ -48,6 +78,61 @@ into the {body} tag of the default.hbs template --}}
                     </div>
                 </section>
             </div>
+=======
+                <div class="post-full-byline">
+
+                    <section class="post-full-byline-content">
+
+                        <ul class="author-list">
+                            {{#foreach authors}}
+                            <li class="author-list-item">
+
+                                <div class="author-card">
+                                    {{#if profile_image}}
+                                    <img class="author-profile-image" src="{{img_url profile_image size="xs"}}" alt="{{name}}" />
+                                    {{else}}
+                                    <div class="author-profile-image">{{> "icons/avatar"}}</div>
+                                    {{/if}}
+                                    <div class="author-info">
+                                        {{#if bio}}
+                                        <div class="bio">
+                                            <h2>{{name}}</h2>
+                                            <p>{{bio}}</p>
+                                            <p><a href="{{url}}">👉 Все статьи автора</a></p>
+                                        </div>
+                                        {{else}}
+                                        <h2>{{name}}</h2>
+                                        <p>Read <a href="{{url}}">👉 Все статьи автора</a></p>
+                                        {{/if}}
+                                    </div>
+                                </div>
+
+                                {{#if profile_image}}
+                                <a href="{{url}}" class="author-avatar">
+                                    <img class="author-profile-image" src="{{img_url profile_image size="xs"}}" alt="{{name}}" />
+                                </a>
+                                {{else}}
+                                <a href="{{url}}" class="author-avatar author-profile-image">{{> "icons/avatar"}}</a>
+                                {{/if}}
+
+                            </li>
+                            {{/foreach}}
+                        </ul>
+
+                        <section class="post-full-byline-meta">
+                            <h4 class="author-name">{{authors}}</h4>
+                            <div class="byline-meta-content">
+                                <time class="byline-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> {{reading_time}}</span>
+                            </div>
+                        </section>
+
+                    </section>
+
+
+                </div>
+            </header>
+>>>>>>> myRepo/master
 
             {{#if feature_image}}
             <figure class="article-image">
@@ -69,9 +154,41 @@ into the {body} tag of the default.hbs template --}}
             {{/if}}
         </header>
 
+<<<<<<< HEAD
         <section class="gh-content gh-canvas">
             {{content}}
         </section>
+=======
+            <section class="post-full-content">
+                <div class="post-content">
+                    {{content}}
+                </div>
+            </section>
+
+         {{!--   <a href="https://apps.apple.com/ua/app/keykey-typing-practice/id1035137927?mt=12&ct=blogBanner" target="_blank" class="kk-promo"><img src="https://macosworld.ru/content/images/size/w1600/2020/07/keykey-no-promo.png" alt="Клавиатурный тренажер KeyKey для Mac"></a>--}}
+                
+        <section class="post-read">
+       <div class="post-read-header">Получайте новые статьи 👇</div>
+        
+       <div class="post-read-items">
+            <a href="http://eepurl.com/g7deMf" class="button" target="_blank">По почте</a>
+            <a href="/rss/" class="button">Через RSS</a>
+            <a href="https://t.me/moswrld" class="button" target="_blank">В Telegram</a>
+
+        </div>
+         </section>
+        
+            {{!-- Email subscribe form at the bottom of the page --}}
+            {{#if @labs.members}}
+             {{!--   {{> subscribe-form}}--}}
+            {{/if}}
+
+            {{!--
+            <section class="post-full-comments">
+                If you want to embed comments, this is a good place to do it!
+            </section>
+            --}}
+>>>>>>> myRepo/master
 
         {{!--
         <section class="article-comments gh-canvas">
@@ -86,6 +203,7 @@ into the {body} tag of the default.hbs template --}}
 {{#unless @member}}
 <section class="footer-cta">
     <div class="inner">
+<<<<<<< HEAD
         <h2>Sign up for more like this.</h2>
         <a class="footer-cta-button" href="#/portal">
             <div>Enter your email</div>
@@ -101,6 +219,39 @@ into the {body} tag of the default.hbs template --}}
 {{!-- Read more links, just above the footer --}}
 <aside class="read-more-wrap">
     <div class="read-more inner">
+=======
+        <div class="read-next-feed">
+            {{#if primary_tag}}
+            {{#get "posts" filter="tags:{{primary_tag.slug}}+id:-{{id}}" limit="3" as |related_posts|}}
+                {{#if related_posts}}
+                <article class="read-next-card">
+                    <header class="read-next-card-header">
+                        {{#../primary_tag}}
+                        <h3><span>Еще в</span> <a href="{{url}}">{{name}}</a></h3>
+                        {{/../primary_tag}}
+                    </header>
+                    <div class="read-next-card-content">
+                        <ul>
+                            {{#foreach related_posts}}
+                            <li>
+                                <h4><a href="{{url}}">{{title}}</a></h4>
+                                <div class="read-next-card-meta">
+                                    <p><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time> –
+                                        {{reading_time}}</p>
+                                </div>
+                            </li>
+                            {{/foreach}}
+                        </ul>
+                    </div>
+                    <footer class="read-next-card-footer">
+                        <a href="{{#../primary_tag}}{{url}}{{/../primary_tag}}">{{plural meta.pagination.total empty='Нет постов' singular='% статьи(-ей)' plural='Смотреть все статьи'}}
+                            →</a>
+                    </footer>
+                </article>
+                {{/if}}
+            {{/get}}
+            {{/if}}
+>>>>>>> myRepo/master
 
         {{!-- The {#get} helper below fetches some of the latest posts here
         so that people have something else to read when they finish this one.

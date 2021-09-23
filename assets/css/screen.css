@@ -1002,9 +1002,14 @@ is the very first element in the post content */
         font-size: 1.7rem;
     }
 
+<<<<<<< HEAD
     .gh-content blockquote::before {
         left: -4vmin;
     }
+=======
+.post-full-content video {
+  width: unset !important;
+>>>>>>> myRepo/master
 }
 
 
